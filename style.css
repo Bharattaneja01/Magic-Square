@@ -1,163 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
 body{
-    background-image: url("Screenshot\ \(10\).png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+    background: rgb(211,227,47);
+    background: linear-gradient(201deg, rgba(211,227,47,0.9136904761904762) 53%, rgba(189,255,0,0.695203081232493) 100%);
 }
-/* body{
-    background-image: url(images\ \(2\).png);
-    height: 10px;
-    width: 10px;
-} */
-
-/* #magicSquare p{
-    color:darkgoldenrod;
-} */
-
 nav{
-    height: 34px;
-    width: 100%;
-    background-color: black;
-    margin-top: 0%;
-    padding:0%;
-}
-.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #150707;
     color: aliceblue;
-    margin-left: 41%;
-    margin-top: -20px;
+    height: 40px;
 }
-
-#numField1{
-    border-radius: 8px;
+.mainContainer{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin-top: 20px;
 }
-#numField2{
-    border-radius: 8px;
+button{
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
 }
-#numField3{
-    border-radius: 8px;
+button:hover{
+    transition: ease-out;
+    background-color: bisque;
 }
-#numField4{
-    border-radius: 8px;
+form{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
-
-.result{
-    margin-left: 6%;
-    margin-top: 103px;
-    /* word-spacing: 10px; */
-    /* position: relative; */
+.text{
+   
+    font-size: 30px;
 }
-#resultField1{
-    margin-top: -164px;
-    margin-left: 10px;
+.numField{
+    width: 150px;
+    height: 25px;
+    
 }
-#resultField2{
-    margin-top: -46px;
-    margin-left: 59px;
-}
-#resultField3{
-    margin-top: -47px;
-    margin-left: 108px;
-}
-#resultField4{
-    margin-top: -46px;
-    margin-left: 158px;
-    /* margin-left: 158px; */
-}
-#resultField5{
-    margin-top: -5px;
-    margin-left: 11px;
-}
-#resultField6{
-    margin-top: -48px;
-    margin-left: 58px;
-}
-#resultField7{
-    margin-top: -48px;
-    margin-left: 108px;
-}
-#resultField8{
-    margin-top: -48px;
-    margin-left: 157px;
-}
-#resultField9{
-    margin-top: 0px;
-    margin-left: 11px;
-}
-#resultField10{
-    margin-top: -48px;
-    margin-left: 58px;
-}
-#resultField11{
-    margin-top: -48px;
-    margin-left: 108px;
-}
-#resultField12{
-    margin-top: -48px;
-    margin-left: 157px;
-}
-#resultField13{
-    margin-top: -4px;
-    margin-left: 11px;
-}
-#resultField14{
-    margin-top: -48px;
-    margin-left: 58px;
-}
-#resultField15{
-    margin-top: -48px;
-    margin-left: 108px;
-}
-#resultField16{
-    margin-top: -48px;
-    margin-left: 157px;
-}
-#resultField17{
-    margin-top: -178px;
-    margin-left: 317px;
-}
-#resultField18{
-    margin-top: 27px;
-    margin-left: 433px;
-    font-size: 44px;
-}
-
-.result img{
-    height: 169px;
-    width: 191px;
-}
-
-.month{
-    margin-left: 76vh;
-    margin-top: -79px;
-    font-size: 18px;
-    font-weight: 900;
-}
-.year1{
-    margin-top: 74px;
-    font-size: 18px;
-    font-weight: 900;
-}
-.year2{
-    margin-left: 76vmin;
-    margin-top: -79px;
-    font-size: 18px;
-    font-weight: 900;
-}
-.date{
-    font-size: 18px;
-    font-weight: 900;
-}
-.calculate{
-    margin-top: 54px;
-    margin-left: 48vmin;
-}
-.image{
-    margin-left: 63%;
-    margin-top: -13em;
-}
-
-.dob{
-    /* font-weight: bold; */
-    font-size: 18px;
-    /* color: indigo; */
-}
+.container{
+    display:none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position:absolute;
+    left: 34px;
+    top: 64px;
+    
+    }
+    .resultMatrix{
+        width: 350px;
+        height: 350px ;
+        background-color: rgb(234, 133, 74);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4 1fr);
+        margin-top: 25px;
+        
+        text-align: center;
+       
+    }
+    .box{
+        border: 2px solid black;
+        font-size: 35px;
+        background-color: rgb(234, 133, 74);
+    }
+    #ramapic{
+        width: 400px;
+        position: absolute;
+        border-radius: 50%;
+        right: 0px;
+        top: 67px;
+    }
+    .ubuntu-light {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .ubuntu-light-italic {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .ubuntu-regular {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .ubuntu-regular-italic {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .ubuntu-medium {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .ubuntu-medium-italic {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .ubuntu-bold {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .ubuntu-bold-italic {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      

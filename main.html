@@ -1,72 +1,72 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Ramanujan Magic Square</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <nav>
-            <div class="name">
-                <h1>MAGIC SQUARE</h1>
+
+<head>
+    <title>Ramanujan Magic Square</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="name">
+            <h1>MAGIC SQUARE</h1>
+        </div>
+    </nav>
+    <div class="mainContainer">
+
+        <h2 class="ubuntu-bold" style="font-size: 35px;">Enter The D.O.B :- </h2>
+
+
+
+        <form id="magicSquare">
+            <div class="date">
+                <p class="text ubuntu-bold-italic">Enter the date</p>
+                <input type="text " id="numField1" class="numField">
             </div>
-        </nav>
-
-        <div class="dob">
-            <h2>Enter The D.O.B :- </h2>
+            <div class="month">
+                <p class="text ubuntu-bold-italic">Enter the month</p>
+                <input type="text" id="numField2" class="numField">
+            </div>
+            <div class="year1">
+                <p class="text ubuntu-bold-italic">Enter the first two digits of year</p>
+                <input type="text" id="numField3" class="numField">
+            </div>
+            <div class="year2">
+                <p class="text ubuntu-bold-italic">Enter the last two digits of year</p>
+                <input type="text" id="numField4" class="numField"><br><br>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="container">
+            <h2 id="heading">Your Magic Number is :</h2>
+            <div class="resultMatrix" style="background-color: brown;">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+                <div class="box box5"></div>
+                <div class="box box6"></div>
+                <div class="box box7"></div>
+                <div class="box box8"></div>
+                <div class="box box9"></div>
+                <div class="box box10"></div>
+                <div class="box box11"></div>
+                <div class="box box12"></div>
+                <div class="box box13"></div>
+                <div class="box box14"></div>
+                <div class="box box15" ></div>
+                <div class="box box16" ></div>
+                
+            </div>
         </div>
 
-        <div>
-            <form id="magicSquare">
-                <div class="date">
-                    <p>Enter the date</p>
-                    <input type="text" id="numField1">
-                </div>
-                <div class="month">
-                    <p>Enter the month</p>
-                    <input type="text" id="numField2">
-                </div>
-                <div class="year1">
-                    <p>Enter the first two digits of year</p>
-                    <input type="text" id="numField3">
-                </div>
-                <div class="year2">
-                    <p>Enter the last two digits of year</p>
-                    <input type="text" id="numField4"><br><br>
-                </div>
-                <div class="calculate">
-                    <input type="submit" value="Calculate">
-                </div>
-            </form>
-        </div>
+    </div>
+    <img id="ramapic" src="ramapic.jpg" alt="pic">
+    
+    <script type="text/javascript" src="index.js"></script>
+</body>
 
-        <div class="image">
-            <img src="ramanujan.jpeg" alt="ramanujan">
-        </div>
-
-        <div class="result">
-            
-            <img src="images (2).png" alt="matrix">           
-            <h2 id="resultField1"></h2>
-            <h2 id="resultField2"></h2>
-            <h2 id="resultField3"></h2>
-            <h2 id="resultField4"></h2>
-            <h2 id="resultField5"></h2>
-            <h2 id="resultField6"></h2>
-            <h2 id="resultField7"></h2>
-            <h2 id="resultField8"></h2>
-            <h2 id="resultField9"></h2>
-            <h2 id="resultField10"></h2>
-            <h2 id="resultField11"></h2>
-            <h2 id="resultField12"></h2>
-            <h2 id="resultField13"></h2>
-            <h2 id="resultField14"></h2>
-            <h2 id="resultField15"></h2>
-            <h2 id="resultField16"></h2>
-            <h2 id="resultField17"></h2>
-            <h2 id="resultField18"></h2>
-        </div>
-        
-
-        <script type="text/javascript" src="index.js"></script>
-        </body>
 </html>
